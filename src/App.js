@@ -21,19 +21,19 @@ const App = () => {
 
   return (
     <div className="">
-      <audio ref={audioRef} autoPlay allow="autoplay" controls loop>
-        <source src={audioSource}></source>
+      <audio ref={audioRef} autoPlay allow="autoplay" controls loop style={{ display:"none" }}>
+        <source src={audioSource}> </source>
       </audio>
 
       {isPlaying ? (
         <button onClick={playAudio}>
           {/* <img src={playAudioIcon} alt="music-pause-icon" loading="lazy"/> */}
-          play
+          pause
         </button>
       ) : (
         <button onClick={pauseAudio}>
           {/* <img src={pauseAudioIcon} alt="music-play-icon" loading="lazy" /> */}
-          pause
+          play
         </button>
       )}
     </div>
