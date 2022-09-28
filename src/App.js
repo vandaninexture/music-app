@@ -20,9 +20,9 @@ const App = () => {
   };
 
   return (
-    <div className="">
+    <div>
       <audio ref={audioRef} autoPlay allow="autoplay" controls loop style={{ display:"none" }}>
-        <source src={audioSource}> </source>
+        <source src={audioSource} />
       </audio>
 
       {isPlaying ? (
